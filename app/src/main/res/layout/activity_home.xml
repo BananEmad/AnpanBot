@@ -23,10 +23,10 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/username"
-        android:src="@drawable/userpic"
+        android:src="@drawable/circle_user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,10 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="55dp"
 
 
-        android:text="@string/studentname1"
         android:textColor="#FFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -51,59 +50,32 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/ll2"
         android:layout_width="368dp"
-        android:layout_height="130dp"
+        android:layout_height="110dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/bgmenus"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.23000002">
+        app:layout_constraintVertical_bias="0.19999999">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:orientation="horizontal"
-            android:paddingTop="20dp"
-            android:weightSum="4">
+            android:paddingTop="10dp"
+            android:weightSum="3">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgchat"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginBottom="8dp"
-                    android:src="@drawable/iclist" />
-
-                <TextView
-                    android:id="@+id/review"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:text="@string/chatwithme"
-                    android:textColor="#172646"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -111,7 +83,7 @@
 
                 <ImageView
                     android:id="@+id/imgqb"
-                    android:layout_width="60dp"
+                    android:layout_width="75dp"
                     android:layout_height="60dp"
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/icnet" />
@@ -128,7 +100,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -136,7 +108,7 @@
 
                 <ImageView
                     android:id="@+id/imgquiz"
-                    android:layout_width="60dp"
+                    android:layout_width="75dp"
                     android:layout_height="60dp"
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/icplug" />
@@ -153,7 +125,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -161,7 +133,7 @@
 
                 <ImageView
                     android:id="@+id/imglessons"
-                    android:layout_width="60dp"
+                    android:layout_width="75dp"
                     android:layout_height="60dp"
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/icapps" />
@@ -183,71 +155,52 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="154dp"
-        android:layout_height="145dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+
+        android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/icguide"
+        android:src="@drawable/anpan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintTop_toBottomOf="@+id/ll2"
+        app:layout_constraintVertical_bias="0.0" />
 
 
     <TextView
         android:id="@+id/pagetitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
 
+        android:layout_marginTop="8dp"
         android:text="@string/need_help"
         android:textColor="#172646"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.65999997" />
-
-    <TextView
-        android:id="@+id/pagesubtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="8dp"
-        android:lineSpacingExtra="6dp"
-        android:text="@string/helping"
-        android:textAlignment="center"
-        android:textColor="#A1A1A1"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pagetitle"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnguide"
         android:layout_width="194dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bgbtnguide"
 
-        android:text="@string/guid"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bgbtnguide"
+        android:text="@string/chatwithme"
         android:textAllCaps="false"
         android:textColor="#FFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pagesubtitle"
-        app:layout_constraintVertical_bias="0.120000005" />
+        app:layout_constraintTop_toBottomOf="@+id/pagetitle"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.nightonke.boommenu.BoomMenuButton
         android:id="@+id/bmb"
@@ -258,20 +211,23 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-
-        android:layout_marginBottom="8dp"
-
+        android:visibility="visible"
+        app:bmb_autoHide="false"
+        app:bmb_boomInWholeScreen="true"
         app:bmb_buttonEnum="textOutsideCircle"
         app:bmb_buttonPlaceEnum="buttonPlace_sc_8_2"
+        app:bmb_cacheOptimization="false"
+        app:bmb_dimColor="#55000000"
+        app:bmb_draggable="true"
         app:bmb_normalColor="#8ADBE3"
         app:bmb_piecePlaceEnum="piecePlace_dot_8_1"
-        app:bmb_rotateDegree="25"
+        app:bmb_rotateDegree="100"
         app:bmb_shadowEffect="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>

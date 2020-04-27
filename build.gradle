@@ -4,13 +4,19 @@ buildscript {
     repositories {
         google()
         jcenter()
+       maven {
+           url "https://maven.google.com"
+       }
         maven {
-            url "https://maven.google.com"
+            url  "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
         }
+
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
         classpath 'com.google.gms:google-services:4.2.0'
+
 
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -20,12 +26,29 @@ buildscript {
 
 allprojects {
 
+    configurations.all {
+        resolutionStrategy {
+            preferProjectModules()
+            dependencySubstitution {
+                // clashes with com.google.code.findbugs:annotations which includes jsr305 and more
+                substitute(module("com.google.code.findbugs:jsr305")).with(module("com.google.code.findbugs:annotations:3.0.1"))
+                substitute(module("net.jcip:jcip-annotations")).with(module("com.google.code.findbugs:annotations:3.0.1"))
+               // substitute(module("com.github.stephenc.jcip:jcip-annotations")).with(module("com.google.code.findbugs:annotations:3.0.1"))
+
+            }
+        }
+    }
     repositories {
         google()
         jcenter()
+
         maven {
             url "https://maven.google.com"
         }
+        maven {
+            url  "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+        }
+
     }
 
 }

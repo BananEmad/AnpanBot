@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="12dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="50dp"
+    android:id="@+id/cd"
+     android:background="@color/cardview_shadow_end_color"
+   >
+   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+       android:layout_margin="12dp">
+
+       <ImageView
+
+           android:id="@+id/less_img"
+           android:layout_width="150dp"
+           android:layout_height="125dp"
+
+           android:layout_alignParentStart="true"
+           android:foregroundGravity="fill"
+
+           android:src="@drawable/ancut" />
+       <com.nightonke.boommenu.BoomMenuButton
+           android:id="@+id/bmb1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="invisible"
+           app:bmb_buttonEnum="ham"
+           app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+           app:bmb_buttonRadius="5dp"
+           app:bmb_dimColor="#55000000"
+           app:bmb_normalColor="#8ADBE3"
+           app:bmb_piecePlaceEnum="piecePlace_ham_4"
+           app:bmb_rotateDegree="10"
+           app:bmb_shadowEffect="true" />
+       <TextView
+           android:id="@+id/less_title"
+           android:layout_width="175dp"
+           android:layout_height="wrap_content"
+           android:ellipsize="end"
+           android:padding="10dp"
+           android:textColor="#6f6f6f"
+           android:textSize="18sp"
+           android:textStyle="bold"
+           android:layout_alignParentEnd="true"
+
+           />
+
+
+   </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

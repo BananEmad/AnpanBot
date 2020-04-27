@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "897308629552-mu9nlam5ttnh8ffqvc950oh6jks6a3ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ed.anpanman",
+            "certificate_hash": "e9146501001146b2cae2729275379986eda131ba"
+          }
+        },
+        {
           "client_id": "897308629552-e5s3kndvl8s6mkdi81va09cvfmvplkn0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
